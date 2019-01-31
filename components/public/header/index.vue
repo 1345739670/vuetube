@@ -56,8 +56,8 @@ export default {
 </script>
 
 <style scoped lang="stylus" rel="stylesheet/stylus">
-  @import "~assets/stylus/variable"
-  @import "~assets/stylus/mixin"
+  @import "~assets/css/stylus/variable"
+  @import "~assets/css/stylus/mixin"
   .m-header {
     position: fixed;
     top: 0;
@@ -142,6 +142,7 @@ export default {
     color: #ff0000;
   }
   .icon-mean {
+    font-size: 32px;
     padding: 8px;
     margin-right: 16px;
   }
