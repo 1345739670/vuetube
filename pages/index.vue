@@ -22,7 +22,7 @@ export default {
 <style scoped lang="stylus" rel="stylesheet/stylus">
 .container 
   // background #35495e
-  margin 30px 0 0 240px
+  margin 30px 0 0 0
   display flex
   flex-direction column
   align-items center
