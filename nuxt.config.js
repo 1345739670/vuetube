@@ -46,7 +46,10 @@ module.exports = {
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // It is not required to manually register @nuxtjs/proxy module, but it does need to be in your dependencies.
+    // 不需要手动注册@ nuxtjs / proxy模块，但它确实需要在您的依赖项中。
+    // '@nuxtjs/proxy'
   ],
   /*
   ** Axios module configuration
@@ -69,5 +72,6 @@ module.exports = {
       
     }
   },
+  // 如果出现 document 问题，改为 false
   cache: true
 }

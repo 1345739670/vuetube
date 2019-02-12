@@ -1,10 +1,10 @@
 <template>
   <el-container>
-    <el-header>
+    <el-header height="56px">
       <my-header/>
     </el-header>
     <el-container>
-      <el-aside><SideBar/></el-aside>
+      <el-aside width="240px"><SideBar/></el-aside>
       <el-main>
         <nuxt />
       </el-main>
