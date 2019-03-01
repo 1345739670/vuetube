@@ -30,6 +30,7 @@ module.exports = {
   css: [
     'element-ui/lib/theme-chalk/reset.css',
     'element-ui/lib/theme-chalk/index.css',
+    'swiper/dist/css/swiper.css',
     '@/assets/css/common.css'
   ],
 
@@ -38,7 +39,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/element-ui',
-    { src: "~/assets/font/iconfont.js", ssr: false }
+    { src: "~/assets/font/iconfont.js", ssr: false },
+    { src: '~/plugins/vue-awesome-swiper.js', ssr: false },
   ],
 
   /*

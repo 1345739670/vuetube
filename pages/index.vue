@@ -2,9 +2,6 @@
   <section class="container">
     <div class="wrapper">
         <channel></channel>
-        <channel></channel>
-        <channel></channel>
-        <channel></channel>
     </div>
   </section>
 </template>
