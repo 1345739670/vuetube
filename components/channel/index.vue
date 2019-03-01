@@ -5,8 +5,7 @@
         <h2>
           <img class="container-img" src="@/assets/img/douban.png" alt="最新视频">
           <span>最新视频</span>
-          <span class="from">
-            来自
+          <span class="from">来自
             <a>豆瓣电影</a>
           </span>
         </h2>
@@ -153,20 +152,6 @@ export default {
   height: 32px;
 }
 
-.container-contents {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.container-contentsItem {
-  padding-right: 4px;
-  margin-top: 24px;
-  margin-bottom: 24px;
-  width: 210px;
-  overflow: hidden;
-}
-
 .container-item {
   display: flex;
   vertical-align: top;
@@ -195,46 +180,6 @@ export default {
       background-color: red;
     }
   }
-}
-
-.contents-thumb {
-  width: 210px;
-  height: 118px;
-}
-
-.contents-thumb img {
-  width: 210px;
-  height: 118px;
-}
-
-.container-details {
-  display: flex;
-  flex-direction: column;
-}
-
-.wrapper-details {
-  display: flex;
-  justify-content: center;
-  /* 以后用作长标题 */
-  /* padding-right: 24px; */
-}
-
-.title-details {
-  color: hsl(0, 0%, 6.7%);
-  margin: 8px 0 8px;
-}
-
-.title-details a {
-  color: hsl(0, 0%, 6.7%);
-  max-height: 3.2rem;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  -webkit-line-clamp: 2;
-  font-size: 1.4rem;
-  font-weight: 500;
-  line-height: 1.6rem;
 }
 
 .from {
