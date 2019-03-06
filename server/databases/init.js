@@ -38,7 +38,7 @@ exports.connect = () => {
       } else {
         // throw new Error('数据库挂了')
         // reject(err)
-        console.log(err)
+        console.log(`数据库挂了: ${err}`)
       }
     })
   

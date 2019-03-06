@@ -2,8 +2,9 @@ const Koa = require('koa')
 const consola = require('consola')
 const { Nuxt, Builder } = require('nuxt')
 
-const {connect} = require('./databases/init')
-
+// const {connect  } = require('./databases/init')
+import { connect, initSchemas } from './databases/init'
+import router from './router/index'
 const app = new Koa()
 
 // Import and Set Nuxt.js options
@@ -13,6 +14,9 @@ config.dev = !(app.env === 'production')
 async function start() {
 
   await connect()
+  initSchemas()
+
+  require('./tasks/movie')
 
   // Instantiate nuxt.js
   const nuxt = new Nuxt(config)
@@ -27,6 +31,11 @@ async function start() {
     const builder = new Builder(nuxt)
     await builder.build()
   }
+
+  // 路由放在app.use前面
+  app
+    .use(router.routes())
+    .use(router.allowedMethods())
 
   app.use(ctx => {
     ctx.status = 200
